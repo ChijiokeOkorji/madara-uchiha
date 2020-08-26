@@ -1,0 +1,1105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.effect-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.eye-area {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#eye {
+  overflow: hidden;
+}
+
+#eye::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  z-index: -2;
+}
+
+#eye::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(circle, transparent 0px, transparent 108px, #000000 120px);
+  z-index: -1;
+}
+
+#shar {
+  position: absolute;
+  z-index: 1;
+  transform: scale(0.1);
+}
+
+.ir, .rir1, .rir2 {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.rir1 {
+  width: 90px;
+  height: 90px;
+}
+
+.rir2 {
+  width: 270px;
+  height: 270px;
+}
+
+#ir2 {
+  transform: rotate(120deg);
+}
+
+#ir3 {
+  transform: rotate(240deg);
+}
+
+#ir4 {
+  transform: rotate(60deg);
+}
+
+#ir5 {
+  transform: rotate(180deg);
+}
+
+#ir6 {
+  transform: rotate(300deg);
+}
+
+.stm, .rstm1, .rstm2 {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(4.667px, -90px);
+}
+
+.rstm1 {
+  transform: translate(4.667px, -45px);
+}
+
+.rstm2 {
+  transform: translate(4.667px, -135px);
+}
+
+.sb1, .sb11 {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.sb1 {
+  height: 14px;
+  overflow: hidden;
+}
+
+.sb11 {
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.sb2, .sb3 {
+  width: 18.667px;
+  height: 18.667px;
+  border-radius: 50%;
+  background-color: #000000;
+  position: absolute;
+  right: 0;
+}
+
+.sb2::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.sb3 {
+  background-color: #000000;
+  left: 0;
+}
+
+.shariris {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000000;
+  position: absolute;
+}
+
+#ems {
+  transform: rotate(-120deg) scale(0.1);
+  position: absolute;
+  z-index: 2;
+}
+
+.ectp {
+  position: absolute;
+}
+
+#epr1 {
+  transform: rotate(30deg);
+}
+
+#epr2 {
+  transform: rotate(150deg);
+}
+
+#epr3 {
+  transform: rotate(270deg);
+}
+
+.epole {
+  width: 54px;
+  height: 64px;
+  background-color: #000000;
+  transform: translate(-48px, 0px);
+}
+
+.er1 {
+  width: 132px;
+  height: 91.3px;
+  transform: translate(-42px, -42px) rotate(-25deg);
+  overflow: hidden;
+}
+
+.ecl1 {
+  width: 198px;
+  height: 198px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff0000 0px, #ff0000 79px, #000000 79px);
+  transform: translate(2px, 6px);
+}
+
+.ecl2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  transform: translate(6px, 18px);
+}
+
+.ecl3 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #000000;
+  position: absolute;
+  transform: translate(75px, -0.5px);
+}
+
+.ecl4 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  transform: translate(-15px, 0.5px);
+}
+
+.eblk {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #000000;
+  transform: translate(-23px, 64px);
+}
+
+.ec0 {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #000000;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0px, -81px);
+}
+
+.ec1 {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #ff0000;
+}
+
+#rinne {
+  width: 630px;
+  height: 630px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.01);
+  z-index: 3;
+}
+
+.sharct, .rtm, .rinne-ct, .ems-ct, .sgtm {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rtm {
+  opacity: 0;
+}
+
+.ring {
+  border-radius: 50%;
+  border: 1px solid black;
+  position: absolute;
+}
+
+#rngp {
+  width: 90px;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+#rng1 {
+  width: 630px;
+  height: 630px;
+}
+
+#rng2 {
+  width: 540px;
+  height: 540px;
+}
+
+#rng3 {
+  width: 450px;
+  height: 450px;
+}
+
+#rng4 {
+  width: 360px;
+  height: 360px;
+}
+
+#rng5 {
+  width: 270px;
+  height: 270px;
+}
+
+#rng6 {
+  width: 180px;
+  height: 180px;
+}
+
+#rng7 {
+  width: 90px;
+  height: 90px;
+}
+
+#pupil {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #000000;
+  position: absolute;
+  z-index: 4;
+}
+
+.input-hide {
+  position: absolute;
+  opacity: 0;
+}
+
+.bbtn, .sbtn {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}
+
+#big-btn1 {
+  z-index: 60;
+}
+
+#big-btn2 {
+  z-index: 43;
+}
+
+#big-btn3 {
+  z-index: 42;
+}
+
+#big-btn4 {
+  z-index: 41;
+}
+
+#big-btn5 {
+  z-index: 40;
+}
+
+.sbtn {
+  width: 28px;
+  height: 28px;
+}
+
+#small-btn1 {
+  z-index: 56;
+}
+
+#small-btn2 {
+  z-index: 55;
+}
+
+#small-btn3 {
+  z-index: 54;
+}
+
+#small-btn4 {
+  z-index: 53;
+}
+
+#bbtn1:checked ~ #big-btn1 {
+  animation: big-z-index1 4.5s linear 0s 1 normal forwards;
+}
+
+@keyframes big-z-index1 {
+  0% {z-index: 60;}
+  
+  99.999% {z-index: 60;}
+
+  100% {z-index: 30;}
+}
+
+#bbtn2:checked ~ #big-btn1, #bbtn3:checked ~ #big-btn1, #bbtn4:checked ~ #big-btn1 {
+  z-index: 30;
+}
+
+#bbtn2:checked ~ #big-btn3 {
+  animation: big-z-index3 2s linear 0s 1 normal forwards;
+}
+
+@keyframes big-z-index3 {
+  0% {z-index: 42;}
+  
+  99.999% {z-index: 42;}
+
+  100% {z-index: 50;}
+}
+
+#bbtn3:checked ~ #big-btn4 {
+  animation: big-z-index4 2s linear 0s 1 normal forwards;
+}
+
+@keyframes big-z-index4 {
+  0% {z-index: 41;}
+  
+  99.999% {z-index: 41;}
+
+  100% {z-index: 50;}
+}
+
+#bbtn4:checked ~ #big-btn5 {
+  animation: big-z-index5 2s linear 0s 1 normal forwards;
+}
+
+@keyframes big-z-index5 {
+  0% {z-index: 40;}
+  
+  99.999% {z-index: 40;}
+
+  100% {z-index: 50;}
+}
+
+#bbtn3:checked ~ #big-btn3 {
+  animation: big-z-index3r 2s linear 0s 1 normal forwards;
+}
+
+@keyframes big-z-index3r {
+  0% {z-index: 61;}
+  
+  99.999% {z-index: 61;}
+
+  100% {z-index: 42;}
+}
+
+#bbtn4:checked ~ #big-btn4 {
+  animation: big-z-index3r 2s linear 0s 1 normal forwards;
+}
+
+@keyframes big-z-index4r {
+  0% {z-index: 61;}
+  
+  99.999% {z-index: 61;}
+
+  100% {z-index: 42;}
+}
+
+#bbtn5:checked ~ #big-btn5 {
+  animation: big-z-index5r 2s linear 0s 1 normal forwards;
+}
+
+@keyframes big-z-index5r {
+  0% {z-index: 61;}
+  
+  99.999% {z-index: 61;}
+
+  100% {z-index: 40;}
+}
+
+#sbtn1:checked ~ #small-btn2 {
+  animation: small-z-index2 2s linear 0s 1 normal forwards;
+}
+
+@keyframes small-z-index2 {
+  0% {z-index: 55;}
+  
+  99.999% {z-index: 55;}
+
+  100% {z-index: 57;}
+}
+
+#sbtn2:checked ~ #small-btn2 {
+  animation: small-z-index2r 2s linear 0s 1 normal forwards;
+}
+
+@keyframes small-z-index2r {
+  0% {width: 300px;
+    height: 300px;
+    z-index: 61;}
+  
+  99.999% {width: 300px;
+    height: 300px;
+    z-index: 61;}
+
+  100% {width: 28px;
+    height: 28px;
+    z-index: 55;}
+}
+
+#bbtn3:checked ~ #small-btn3 {
+  animation: small-z-indexb3 2s linear 0s 1 normal forwards;
+}
+
+@keyframes small-z-indexb3 {
+  0% {z-index: 54;}
+  
+  99.999% {z-index: 54;}
+
+  100% {z-index: 58;}
+}
+
+#bbtn3:checked ~ #sbtn3:checked ~ #small-btn4 {
+  animation: small-z-indexb4 2s linear 0s 1 normal forwards;
+}
+
+@keyframes small-z-indexb4 {
+  0% {z-index: 53;}
+  
+  99.999% {z-index: 53;}
+
+  100% {z-index: 59;}
+}
+
+#sbtn4:checked ~ #small-btn4 {
+  animation: small-z-index4r 2s linear 0s 1 normal forwards;
+}
+
+@keyframes small-z-index4r {
+  0% {width: 300px;
+    height: 300px;
+    z-index: 61;}
+  
+  99.999% {width: 300px;
+    height: 300px;
+    z-index: 61;}
+
+  100% {width: 28px;
+    height: 28px;
+    z-index: 53;}
+}
+
+#sbtn1:checked ~ #small-btn1 {
+  animation: small-z-index1r 2s linear 0s 1 normal forwards;
+}
+
+@keyframes small-z-index1r {
+  0% {width: 300px;
+    height: 300px;
+    z-index: 61;}
+  
+  99.999% {width: 300px;
+    height: 300px;
+    z-index: 61;}
+
+  100% {width: 28px;
+    height: 28px;
+    z-index: 56;}
+}
+
+#sbtn3:checked ~ #small-btn3 {
+  animation: small-z-index3r 2s linear 0s 1 normal forwards;
+}
+
+@keyframes small-z-index3r {
+  0% {width: 300px;
+    height: 300px;
+    z-index: 61;}
+  
+  99.999% {width: 300px;
+    height: 300px;
+    z-index: 61;}
+
+  100% {width: 28px;
+    height: 28px;
+    z-index: 54;}
+}
+
+#bbtn1:checked ~ #eye #shar {
+  transform: scale(1);
+}
+
+#bbtn1:checked ~ #eye::before, #bbtn1:checked ~ #eye .sb2 {
+  animation: eye-red 2s ease 0s 1 normal forwards;
+}
+
+@keyframes eye-red {
+  0% {background-color: black;}
+
+  100% {background-color: red;}
+}
+
+#bbtn1:checked ~ #eye .shariris {
+  animation: shariris-contract 4.5s ease 0s 1 normal forwards;
+}
+
+@keyframes shariris-contract {
+  0% {width: 180px;
+    height: 180px;}
+
+  44.444% {width: 180px;
+    height: 180px;}
+
+  55.556% {width: 135px;
+    height: 135px;}
+
+  66.667% {width: 180px;
+    height: 180px;}
+
+  88.889% {width: 90px;
+    height: 90px;}
+
+  100% {width: 135px;
+    height: 135px;}
+}
+
+#bbtn1:checked ~ #eye .stm {
+  animation: tomoe-contract 4.5s ease 0s 1 normal forwards;
+}
+
+@keyframes tomoe-contract {
+  0% {transform: translate(4.667px, -90px);}
+
+  44.444% {transform: translate(4.667px, -90px);}
+
+  55.556% {transform: translate(4.667px, -67.5px);}
+
+  66.667% {transform: translate(4.667px, -90px);}
+
+  88.889% {transform: translate(4.667px, -45px);}
+
+  100% {transform: translate(4.667px, -67.5px);}
+}
+
+#sbtn1:checked ~ #eye .sharct {
+  animation: iris-rotate1 2s ease-in-out 0s 1 normal none;
+}
+
+#sbtn2:checked ~ #eye .sharct {
+  animation: iris-rotate2 2s ease-in-out 0s 1 normal none;
+}
+
+@keyframes iris-rotate1 {
+  0% {transform: rotate(0deg);}
+
+  100% {transform: rotate(720deg);}
+}
+
+@keyframes iris-rotate2 {
+  0% {transform: rotate(0deg);}
+
+  100% {transform: rotate(720deg);}
+}
+
+#sbtn1:checked ~ #eye .sb2::before {
+  animation: eye-red-glow1 2s ease-out 0s 1 normal none;
+}
+
+#sbtn2:checked ~ #eye .sb2::before {
+  animation: eye-red-glow2 2s ease-out 0s 1 normal none;
+}
+
+#sbtn1:checked ~ #eye::after, #sbtn1:checked ~ #eye .ecl2, #sbtn1:checked ~ #eye .ecl4, #sbtn1:checked ~ #eye .ec1 {
+  animation: eye-red-glow1 2s ease-out 0s 1 normal none;
+}
+
+#sbtn2:checked ~ #eye::after, #sbtn2:checked ~ #eye .ecl2, #sbtn2:checked ~ #eye .ecl4, #sbtn2:checked ~ #eye .ec1 {
+  animation: eye-red-glow2 2s ease-out 0s 1 normal none;
+}
+
+@keyframes eye-red-glow1 {
+  0% {background-color: red;
+    box-shadow: 0 0 0 0 red;}
+
+  25% {background-color: rgb(255, 20, 20);
+    box-shadow: 0 0 50px 0 rgb(255, 0, 0);}
+
+  75% {background-color: rgb(255, 20, 20);
+    box-shadow: 0 0 50px 0 rgb(255, 0, 0);}
+
+  100% {background-color: red;
+    box-shadow: 0 0 0 0 red;}
+}
+
+@keyframes eye-red-glow2 {
+  0% {background-color: red;
+    box-shadow: 0 0 0 0 red;}
+
+  25% {background-color: rgb(255, 20, 20);
+    box-shadow: 0 0 50px 0 rgb(255, 0, 0);}
+
+  75% {background-color: rgb(255, 20, 20);
+    box-shadow: 0 0 50px 0 rgb(255, 0, 0);}
+
+  100% {background-color: red;
+    box-shadow: 0 0 0 0 red;}
+}
+
+#sbtn1:checked ~ #eye .ems-ct {
+  animation: ems-rotate1 2s ease 0s 1 normal none;
+}
+
+#sbtn2:checked ~ #eye .ems-ct {
+  animation: ems-rotate2 2s ease 0s 1 normal none;
+}
+
+@keyframes ems-rotate1 {
+  0% {transform: rotate(0deg);}
+
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes ems-rotate2 {
+  0% {transform: rotate(0deg);}
+
+  100% {transform: rotate(360deg);}
+}
+
+#sbtn3:checked ~ #eye::after {
+  animation: eye-rinne-glow3 2s ease-out 0s 1 normal none;
+}
+
+#sbtn4:checked ~ #eye::after {
+  animation: eye-rinne-glow4 2s ease-out 0s 1 normal none;
+}
+
+@keyframes eye-rinne-glow3 {
+  0% {background-color: orchid;}
+
+  25% {background-color: rgb(218, 132, 234);}
+
+  75% {background-color: rgb(218, 132, 234);}
+
+  100% {background-color: orchid;}
+}
+
+@keyframes eye-rinne-glow4 {
+  0% {background-color: orchid;}
+
+  25% {background-color: rgb(218, 132, 234);}
+
+  75% {background-color: rgb(218, 132, 234);}
+
+  100% {background-color: orchid;}
+}
+
+#bbtn2:checked ~ #eye::before, #bbtn2:checked ~ #eye .sb2 {
+  background-color: red
+}
+
+#bbtn2:checked ~ #eye .shariris {
+  width: 135px;
+  height: 135px;
+}
+
+#bbtn2:checked ~ #eye .stm {
+  transform: translate(4.667px, -67.5px);
+}
+
+#bbtn2:checked ~ #eye #shar {
+  animation: shar-exit 0.5s ease 0s 1 normal forwards;
+}
+
+@keyframes shar-exit {
+  0% {transform: rotate(0deg) scale(1);}
+
+  100% {transform: rotate(120deg) scale(0.1);}
+}
+
+#bbtn2:checked ~ #eye #ems {
+  animation: ems-entry 1s linear 0s 1 normal forwards;
+}
+
+@keyframes ems-entry {
+  0% {transform: rotate(-120deg) scale(0.1);}
+
+  50% {transform: rotate(-120deg) scale(0.1);}
+
+  100% {transform: rotate(0deg) scale(1);}
+}
+
+#bbtn2:checked ~ #eye .epole {
+  animation: epole-entry 1.5s linear 0s 1 normal forwards;
+}
+
+@keyframes epole-entry {
+  0% {transform: translate(-48px, 0px);}
+
+  66.667% {transform: translate(-48px, 0px);}
+
+  100% {transform: translate(-94px, 0px);}
+}
+
+#bbtn3:checked ~ #eye::before {
+  animation: eye-orchid 2s ease 0s 1 normal forwards;
+}
+
+@keyframes eye-orchid {
+  0% {background-color: red;}
+
+  50% {background-color: red;}
+
+  75% {background-color: white;}
+
+  100% {background-color: orchid;}
+}
+
+#bbtn3:checked ~ #eye .epole {
+  animation: epole-exit 0.5s linear 0s 1 normal forwards;
+}
+
+@keyframes epole-exit {
+  0% {transform: translate(-94px, 0px);}
+
+  100% {transform: translate(-48px, 0px);}
+}
+
+#bbtn3:checked ~ #eye #ems {
+  animation: ems-exit 1s linear 0s 1 normal forwards;
+}
+
+@keyframes ems-exit {
+  0% {transform: rotate(0deg) scale(1);}
+  
+  50% {transform: rotate(0deg) scale(1);}
+
+  100% {transform: rotate(120deg) scale(0.1);}
+}
+
+#bbtn3:checked ~ #eye #rinne {
+  animation: rinne-entry 2s ease 0s 1 normal forwards;
+}
+
+@keyframes rinne-entry {
+  0% {transform: scale(0.05);}
+  
+  50% {transform: scale(0.05);}
+
+  100% {transform: scale(1);}
+}
+
+#bbtn3:checked ~ #eye #rngp {
+  animation: rngp-color 2s ease 0s 1 normal forwards;
+}
+
+@keyframes rngp-color {
+  0% {opacity: 0;}
+
+  75% {opacity: 0;}
+
+  100% {opacity: 1;}
+}
+
+#sbtn3:checked ~ #eye .rinne-ct {
+  animation: rinne-contract3 2s ease 0s 1 normal forwards;
+}
+
+#sbtn4:checked ~ #eye .rinne-ct {
+  animation: rinne-contract4 2s ease 0s 1 normal forwards;
+}
+
+@keyframes rinne-contract3 {
+  0% {transform: scale(1);}
+
+  25% {transform: scale(0.8);}
+
+  75% {transform: scale(0.8);}
+
+  100% {transform: scale(1);}
+}
+
+@keyframes rinne-contract4 {
+  0% {transform: scale(1);}
+
+  25% {transform: scale(0.8);}
+
+  75% {transform: scale(0.8);}
+
+  100% {transform: scale(1);}
+}
+
+#sbtn1:checked ~ #eye .sgtm2 {
+  animation: sage2-rotate1 2s ease-in-out 0s 1 normal forwards;
+}
+
+#sbtn2:checked ~ #eye .sgtm2 {
+  animation: sage2-rotate2 2s ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes sage2-rotate1 {
+  0% {transform: rotate(0deg);}
+
+  100% {transform: rotate(-360deg);}
+}
+
+@keyframes sage2-rotate2 {
+  0% {transform: rotate(0deg);}
+
+  100% {transform: rotate(-360deg);}
+}
+
+#sbtn1:checked ~ #eye .sgtm1, #sbtn1:checked ~ #eye .sgtm3 {
+  animation: sage1-rotate1 2s ease-in-out 0s 1 normal forwards;
+}
+
+#sbtn2:checked ~ #eye .sgtm1, #sbtn2:checked ~ #eye .sgtm3 {
+  animation: sage1-rotate2 2s ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes sage1-rotate1 {
+  0% {transform: rotate(0deg);}
+
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes sage1-rotate2 {
+  0% {transform: rotate(0deg);}
+
+  100% {transform: rotate(360deg);}
+}
+
+#bbtn4:checked ~ #eye::after, #bbtn5:checked ~ #eye::after {
+  background: radial-gradient(circle, transparent 0px, transparent 145px, #000000 150px);
+}
+
+#bbtn4:checked ~ #eye #rinne, #bbtn5:checked ~ #eye #rinne {
+  transform: scale(1);
+}
+
+#bbtn4:checked ~ #eye .sb2 {
+  background-color: red;
+}
+
+#bbtn4:checked ~ #eye {
+  animation: eye-sage-expand 0.5s ease 0s 1 normal forwards;
+}
+
+@keyframes eye-sage-expand {
+  0% {width: 240px;
+    height: 240px;}
+
+  100% {width: 300px;
+    height: 300px;}
+}
+
+#bbtn4:checked ~ #eye::before {
+  animation: eye-sage-red 0.5s ease 0s 1 normal forwards;
+}
+
+@keyframes eye-sage-red {
+  0% {background-color: orchid;}
+
+  100% {background-color: red;}
+}
+
+#bbtn4:checked ~ #eye #rngp {
+  animation: rngp-color-red 0.5s ease 0s 1 normal forwards;
+}
+
+@keyframes rngp-color-red {
+  0% {background-color: rgb(170, 64, 166);}
+
+  100% {background-color: transparent;}
+}
+
+#bbtn4:checked ~ #eye .rtm {
+  animation: rtm-show 2s ease 0s 1 normal forwards;
+}
+
+@keyframes rtm-show {
+  0% {opacity: 0;}
+
+  50% {opacity: 0;}
+
+  100% {opacity: 1;}
+}
+
+#bbtn5:checked ~ #eye .rtm {
+  opacity: 1;
+}
+
+#bbtn5:checked ~ #eye #rngp {
+  background-color: transparent;
+}
+
+#bbtn5:checked ~ #eye .sb2 {
+  animation: sb2-black 1s ease 0s 1 normal forwards;
+}
+
+@keyframes sb2-black {
+  0% {background-color: red;}
+
+  100% {background-color: black;}
+}
+
+#bbtn5:checked ~ #eye {
+  animation: eye-sage-contract 1s ease 0s 1 normal forwards;
+}
+
+@keyframes eye-sage-contract {
+  0% {width: 300px;
+    height: 300px;}
+
+  100% {width: 240px;
+    height: 240px;}
+}
+
+#bbtn5:checked ~ #eye::before {
+  animation: eye-sage-black 1s ease 0s 1 normal forwards;
+}
+
+@keyframes eye-sage-black {
+  0% {background-color: red;}
+
+  100% {background-color: black;}
+}
+
+#sbtn1:checked ~ #eye #pupil {
+  animation: pupil-shrink1 2s ease 0s 1 normal none;
+}
+
+#sbtn2:checked ~ #eye #pupil {
+  animation: pupil-shrink2 2s ease 0s 1 normal none;
+}
+
+#sbtn3:checked ~ #eye #pupil {
+  animation: pupil-shrink3 2s ease-out 0s 1 normal none;
+}
+
+#sbtn4:checked ~ #eye #pupil {
+  animation: pupil-shrink4 2s ease-out 0s 1 normal none;
+}
+
+@keyframes pupil-shrink1 {
+  0% {width: 28px;
+    height: 28px;}
+  
+  25% {width: 22px;
+    height: 22px;}
+
+  75% {width: 22px;
+    height: 22px;}
+  
+  100% {width: 28px;
+    height: 28px;}
+}
+
+@keyframes pupil-shrink2 {
+  0% {width: 28px;
+    height: 28px;}
+  
+  25% {width: 22px;
+    height: 22px;}
+
+  75% {width: 22px;
+    height: 22px;}
+  
+  100% {width: 28px;
+    height: 28px;}
+}
+
+@keyframes pupil-shrink3 {
+  0% {width: 28px;
+    height: 28px;}
+  
+  25% {width: 24px;
+    height: 24px;}
+
+  75% {width: 24px;
+    height: 24px;}
+  
+  100% {width: 28px;
+    height: 28px;}
+}
+
+@keyframes pupil-shrink4 {
+  0% {width: 28px;
+    height: 28px;}
+  
+  25% {width: 24px;
+    height: 24px;}
+
+  75% {width: 24px;
+    height: 24px;}
+  
+  100% {width: 28px;
+    height: 28px;}
+}
